@@ -6,5 +6,8 @@ class PepSpider(scrapy.Spider):
     allowed_domains = ['peps.python.org']
     start_urls = ['http://peps.python.org/']
 
-    def parse(self, response):
+    def parse(self, response, *kwargs):
+        pass
+
+    def parse_pep(self, response):
         pass
