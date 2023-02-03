@@ -1,10 +1,11 @@
 from sqlalchemy import Column, Integer, String, create_engine
-from sqlalchemy.orm import declarative_base, declared_attr, Session
+from sqlalchemy.orm import Session, declarative_base, declared_attr
 
 from pep_parse.constants import DB_URL
 
 
 class Base:
+    @staticmethod
     @declared_attr
     def __tablename__(cls):
         return cls.__name__.lower()

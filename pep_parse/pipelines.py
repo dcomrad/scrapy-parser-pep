@@ -1,8 +1,8 @@
 import csv
 from datetime import datetime
 
-from pep_parse.database import create_db, Pep
-from pep_parse.constants import DATETIME_FORMAT, BASE_DIR
+from pep_parse.constants import BASE_DIR, DATETIME_FORMAT
+from pep_parse.database import Pep, create_db
 
 filename_template = 'status_summary_{}.csv'
 
